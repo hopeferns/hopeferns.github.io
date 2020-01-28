@@ -1,0 +1,18 @@
+html{
+   background-color: grey;
+
+}
+p{
+  font-family: 'Source Code Pro', monospace;
+
+}
+
+body{
+  font-family: 'Source Code Pro', monospace;
+}
+
+.first{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10px;
+
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Jquery Homework</title>
+
+<h1>jquery homework</h1>
+<p class=first> With this homework, I played with 3 different ways to use jquery. Using it to create a mouse drop down box, creating a button the interacts with objects on the page, and text boxes where you can enter in information. I did copy some codes and tried to mess around with them to understand how they were working together. Styling them has been a struggle however because I am unsure how the css style works with the different script tags. Overall they’re fun to play with and useful to web design. </p>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p1").mousedown(function(){
+    alert("This is a mouse down over!");
+  });
+});
+</script>
+
+<p id="p1">Click Me!</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeOut(3000);
+  });
+});
+</script>
+<p>Messin around with boxes</p>
+
+<button>Click to fade out boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:orange;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:purple;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:teal;"></div>
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("input").focus(function(){
+      $(this).css("background-color", "light blue");
+    });
+    $("input").blur(function(){
+      $(this).css("background-color", "pink");
+    });
+  });
+  </script>
+  </head>
+  <body>
+
+  Name: <input type="text" name="fullname"><br>
+  Email: <input type="text" name="email">
+
+  </body>
+  </html>
